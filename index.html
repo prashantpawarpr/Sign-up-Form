@@ -7,6 +7,82 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <p>hello world</p>
+    <div class="container">
+      <div class="flash-screen">
+        <div class="flash-screen-img">
+          <img style="height: 200px" src="./odin-lined.png" alt="odin logo" />
+          <span class="logo-tag">odin</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="top-content">
+          <div class="top-content-text">
+            <pre>
+        This is not a real online service! You know you need something 
+        like this in your life to help you realize your deepest dreams.
+        Sign up <i>now</i> to get started.
+
+        You know you want to.
+        </pre
+            >
+          </div>
+        </div>
+
+        <div class="center-content">
+          <h2>Let's do this!</h2>
+          <form action="" style="padding-top: 30px">
+            <fieldset style="border: none">
+              <div class="input-row">
+                <div class="input-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" required />
+                </div>
+                <div class="input-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" required />
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required />
+                </div>
+                <div class="input-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" />
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="input-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    required
+                    oninput="validatePassword()"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    required
+                    oninput="validatePassword()"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="bottom-content">
+          <button type="submit" class="btn">Create Account</button>
+        </div>
+        <div class="bottom-content">
+          Already have an account? <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
